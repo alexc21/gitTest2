@@ -3,10 +3,12 @@ package metier;
 public class Formateur {
 
 	private String nom ;
-
-	public Formateur(String nom) {
+	private String prenom;
+	
+	public Formateur(String nom, String prenom) {
 		super();
 		this.nom = nom;
+		this.prenom = prenom;
 	}
 
 	public String getNom() {
@@ -17,10 +19,20 @@ public class Formateur {
 		this.nom = nom;
 	}
 
+	public String getPrenom() {
+		return prenom;
+	}
+
+	public void setPrenom(String prenom) {
+		this.prenom = prenom;
+	}
+
 	@Override
 	public String toString() {
-		return "Formateur [nom=" + nom + "]";
+		return "Formateur [nom=" + nom + ", prenom=" + prenom + "]";
 	}
+
+	
 	
 	
 }
